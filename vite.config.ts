@@ -55,6 +55,8 @@ export default ({ mode }: { mode: string }) => {
     build: {
       sourcemap: false,
       emptyOutDir: true,
+      outDir: 'dist',
+      assetsDir: 'assets'
       /* rollupOptions: {
       output: {
         manualChunks(id) {
