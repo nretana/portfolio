@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "skillsExperience": "Habilidades y Experiencia",
+    "projects": "Proyectos",
+    "aboutMe": "Sobre Mí",
+    "contact": "Contacto",
+    "langMenu": {
+      "english": "Inglés",
+      "spanish": "Español"
+    }
+  },
+  "landingPage": {
+    "heroTitle": "Hola, soy Nelly",
+    "heroText": "Soy una desarrolladora apasionada en front-end, pero también he hecho mis aportes como desarrolladora fullstack. Transformo ideas en soluciones reales y creativas. Tengo más de 8 años de experiencia en la industria tecnológica. Disfruto del proceso de convertir ideas en algo más grande. Espero colaborar contigo para hacer realidad tus aspiraciones."
+  },
+  "skillsExperience": {
+    "title": "Habilidades & Experiencia",
+    "paragraph1": "La siguiente sección destaca mis principales habilidades técnicas y áreas de especialización, desarrolladas a través de experiencia práctica en desarrollo web y crecimiento profesional continuo.",
+    "companies": [
+      {
+        "name": "360Training",
+        "startDate": "06/2024",
+        "endDate": "11/2024",
+        "description": "Colaboración con la modernización de un sistema de gestión de aprendizaje utilizando las siguientes herramientas: React.js, ASP.NET Core, microservicios, SQL Server, Docker y Azure Cloud."
+      },
+      {
+        "name": "Fiserv",
+        "startDate": "10/2012",
+        "endDate": "12/2021",
+        "description": "Colaboración ​​​​en el desarrollo integral para proyectos de servicios financieros, brindando soluciones de alta calidad utilizando las siguientes herramientas: ASP.NET MVC, C#, REST, HTML, CSS3, Less, jQuery y JavaScript."
+      },
+      {
+        "name": "Mnet",
+        "startDate": "11/2011",
+        "endDate": "10/20212",
+        "description": "Colaboración con implementaciones en el área de frontend (ASP.NET, C#, CSS, HTML, jQuery), y backend (Web Services, SQL Server) orientadas a servicios de e-commerce."
+      },
+      {
+        "name": "A&B Technology Solutions",
+        "startDate": "10/2010",
+        "endDate": "05/2011",
+        "description": "Colaboración con implemenatciones en el área de frontend (ASP.NET, Visual Basic, CSS, HTML, Javascript), y backend (Web Services, SQL Server) orientadas a servicios de salud."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "paragraph1": "Proyectos que equilibran usabilidad y estructura con la curiosidad por aprender y experimentar con diferentes herramientas.",
+    "projects": [
+      {
+        "title": "BookStore App",
+        "description": "Pequeña aplicación de libros con gestión de usuarios y sistema de búsqueda de libros.",
+        "tag": "Proyecto"
+      },
+      {
+        "title": "Calendar App",
+        "description": "Aplicación de calendario para realizar un seguimiento de tus citas.",
+        "tag": "Proyecto"
+      },
+      {
+        "title": "Kap App",
+        "description": "Actualización de la interfaz de usuario para el sitio web de terapia curativa.",
+        "tag": "Proyecto"
+      },
+      {
+        "title": "Admin App",
+        "description": "Plantilla para escalar una aplicación monolítica",
+        "tag": "Proyecto"
+      },
+      {
+        "title": "Microfrontend App",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at.",
+        "tag": "Caso de Uso"
+      },
+      {
+        "title": "Explorando Panda CSS",
+        "description": "¿Es posible crear una guía de estilo con CSS-in-JS?",
+        "tag": "Caso de Uso"
+      }
+    ],
+    "btnLabel": "Ver"
+  },
+  "aboutMe": {
+    "title": "Sobre Mí",
+    "paragraph1": "Hola, soy ingeniera de software con más de 8 años de experiencia ayudando a compañías a resolver problemas complejos mediante soluciones inteligentes y orientadas a resultados.",
+    "paragraph2": "A lo largo de mi carrera, he trabajado en proyectos de servicios financieros, e-learning y con equipos pequeños y grandes. Mi enfoque se basa en la estrategia, la colaboración y un profundo conocimiento de las necesidades de los usuarios y los objetivos del negocio.",
+    "paragraph3": "Me apasiona ofrecer excelencia, aprendizaje continuo y crear un trabajo que no solo sea eficaz, sino también duradero. Ya sea optimizando un producto, escalando un sistema o construyendo una producto desde cero, aporto claridad y compromiso a cada etapa del proceso."
+  },
+  "contact": {
+    "title": "Contacto",
+    "paragraph1": "Siempre estoy abierto a nuevas oportunidades, colaboraciones creativas o simplemente conectarme con personas con ideas afines.",
+    "paragraph2": "Si estás interesado en trabajar juntos, tienes un proyecto en mente o simplemente quieres saludar, no dudes en comunicarte con nosotros."
+  }
+}

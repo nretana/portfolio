@@ -1,0 +1,92 @@
+:root {
+    /*colors*/
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --gray-color: #7F8889; /* #F8F8F8;*/
+
+    /* black */
+    --black-light-color: #3E3E43;
+    --black-dark-color: #1E1E23;
+
+    /*light purple
+    C573F5
+    7B47E8*/
+
+    /*purple*/
+    --purple-light-color: #A05CC8;
+    --purple-dark-color: #7B47E8;
+
+    /*card */
+
+    /*light-blue*/
+    --blue-light-color: #4BDCED;
+    --blue-dark-color: #00B4F5;
+
+    /*gray*/
+    --gray-light-color: #ECEDED;  /*#E4E4EA;*/
+    --gray-dark-color: #CCCCCC; /*#D9D9E0;*/
+
+    /*pink*/
+    --orange-light-color: #FF8469; 
+    --pink-dark-color: #DA52BB; 
+
+    /*color tints */ 
+    --blue-tint-color: rgb(217, 235, 255);  /* #D9EBFF;*/
+    /* rgb(255, 232, 232); */
+    --pink-tint-color: rgb(216, 167, 170); /*rgb(213, 173, 176); D5ADB0*/
+    --orange-tint-color: rgb(235, 184, 165);
+
+    /*transparency*/
+    --white-transparency-color-200: rgba(255, 255, 255, 0.2);
+    --gray-transparency-color-300: rgba(228, 228, 234, 0.3);
+    --black-transparency-color-100: rgba(0, 0, 0, 0.1);
+    
+
+    /*scale*/
+    --scale: 1;
+    --cursor-type: pointer;
+    --border-radius: 1.2rem;
+    
+    /*base*/
+    --body-text: var(--gray-color);
+    --body-bg: var(--white-color);
+
+    /*font family*/
+    --font-family: 'Noto Sans', sans-serif;
+
+    /*font size*/
+    --default-font-size: 14px;
+    --font-size-xs: calc(0.75 * var(--default-font-size));
+    --font-size-sm: calc(0.85 * var(--default-font-size));
+    --font-size-md: calc(1 * var(--default-font-size));
+    --font-size-lg: calc(1.25 * var(--default-font-size));
+
+    /*line heights*/
+    --line-height: 1.25rem;
+
+    /*headings*/
+    --font-family-headings: 'Poppins', 'Verdana';
+
+    /* buttons */
+    --button-border-radius: 2rem;
+
+    /* links */
+
+    /* icons */
+    --icon-size: 30;
+    --icon-size-lg: 50;
+
+    /* bullets */
+    --bullet-size: 35px;
+
+    /* cards */
+    --card-border-radius: 1.2rem;
+    --card-border: 1px solid var(--gray-light-color);
+
+    /* tooltip */
+    --tooltip-font-size: var(--font-size-md);
+    --tooltip-padding: 0.4rem 0.5rem;
+
+    /*typing animation*/
+    --steps: 53
+}

@@ -1,0 +1,11 @@
+
+.main-menu {
+    display: flex;
+    justify-content: end;
+}
+
+@media (min-width: 992px){
+    .main-menu {
+        display: block;
+    }
+}

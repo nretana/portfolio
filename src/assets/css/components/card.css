@@ -1,0 +1,25 @@
+.card {
+    background-color: var(--white-color);
+    border: var(--card-border);
+    border-radius: var(--card-border-radius) var(--card-border-radius);
+    box-shadow: 0 4px 19px var(--gray-transparency-color-300);
+    
+    .card-header {
+        text-align: center;
+        color: var(--white-color);
+        border-top-left-radius: var(--card-border-radius);
+        border-top-right-radius: var(--card-border-radius);
+        padding: 1.5rem 1rem;
+        background-image: radial-gradient(var(--black-light-color), var(--black-dark-color));
+        min-height: 140px;
+    }
+
+    .card-body {
+        padding: 2rem 1rem;
+        background-color: var(--white-color);
+    }
+
+    .card-footer {
+        padding: 0 1rem 2rem 1rem;
+    }
+}

@@ -1,0 +1,14 @@
+.grid-tools {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(35px, 50px));
+  grid-template-rows: repeat(3, minmax(35px, 50px));
+  gap: 15px;
+  padding-left: 3.5rem;
+}
+
+@media (min-width: 992px) {
+  .grid-tools {
+    grid-template-columns: repeat(6, minmax(30px, 60px));
+    grid-template-rows: repeat(2, minmax(30px, 60px));
+  }
+}

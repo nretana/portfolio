@@ -1,0 +1,11 @@
+.tag {
+  background-color: var(--pink-tint-color);
+  background-image: linear-gradient(var(--orange-tint-color), var(--pink-tint-color));
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}

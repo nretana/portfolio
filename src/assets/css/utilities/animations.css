@@ -1,0 +1,37 @@
+
+/* text typing animation */
+@keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
+}
+
+@keyframes caret {
+    0% { border-color: transparent }
+    50% { border-color: var(--body-text) }
+    100% { border-color: transparent }
+}
+
+/* button animation */
+@keyframes btn-hover {
+    0% { box-shadow: 0 0 0 0 var(--black-color) }
+}
+
+/* fade-in up */
+@keyframes fade-in-up {
+  0%   {
+    transform: translateY(100px); 
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px); 
+    opacity: 1;
+  }
+}
+
+@keyframes t {
+  from {background-size:0 200%}
+}
+@keyframes b {
+  50% {background-position:0 -100%,0 0}
+}

@@ -1,0 +1,110 @@
+@import '../../../assets/css/utilities/animations.css';
+
+.landing-page {
+  position: relative;
+  height: 100svh;
+
+  .menu-content {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .lang-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .grid-hero-content {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: minmax(0, 20px) minmax(0, auto);
+    grid-template-rows: auto auto;
+
+    .grid-cell-1 {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+    }
+
+    .grid-cell-2 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .grid-cell-3 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .grid-cell-4 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .type-writing-content {
+      h1 {
+        width: fit-content;
+        overflow: hidden;
+        border-right: 8px solid var(--body-text);
+        white-space: nowrap;
+        animation: typing 2.5s steps(26, end), caret 0.75s step-end infinite;
+      }
+    }
+
+    .type-writing-content-2 {
+      h1 > span {
+        color: #0000;
+        background: linear-gradient(-90deg, var(--body-text) 5px, transparent 0)
+            10px 0,
+          linear-gradient(var(--body-text) 0 0) 0 0;
+        background-size: calc(var(--steps) * 2ch) 200%;
+        -webkit-background-clip: padding-box, text;
+        background-clip: padding-box, text;
+        background-repeat: no-repeat;
+        animation: b 0.6s infinite steps(1),
+          t calc(var(--steps) * 0.25s) steps(var(--steps)) forwards;
+      }
+    }
+
+    .img-fluid {
+      width: 100%;
+    }
+  }
+
+  .scroll-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page {
+    .grid-hero-content {
+      .grid-cell-1 {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .landing-page {
+    .menu-content {
+      position: absolute;
+      top: auto;
+      right: auto;
+      left: 0;
+      bottom: 10px;
+    }
+
+    .grid-hero-content {
+      gap: 24px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+
+.popover-trigger {
+    background: transparent;
+    border: 0;
+}
+
+.react-aria-Popover {
+    --background-color: var(--black-color);
+  
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 20px rgba(0 0 0 / 0.1);
+    border-radius: 6px;
+    background: var(--background-color);
+    background-image: linear-gradient(var(--black-light-color), var(--black-dark-color));
+    color: var(--white-color);
+    outline: none;
+    min-width: 125px;
+    max-width: 250px;
+    transition: transform 200ms, opacity 200ms;
+  
+    .react-aria-OverlayArrow svg {
+      display: block;
+      fill: var(--background-color);
+      stroke: var(--border-color);
+      stroke-width: 1px;
+    }
+  
+    &[data-entering],
+    &[data-exiting] {
+      transform: var(--origin);
+      opacity: 0;
+    }
+  
+    &[data-placement=top] {
+      --origin: translateY(8px);
+  
+      &:has(.react-aria-OverlayArrow) {
+        margin-bottom: 6px;
+      }
+    }
+  
+    &[data-placement=bottom] {
+      --origin: translateY(-8px);
+  
+      &:has(.react-aria-OverlayArrow) {
+        margin-top: 6px;
+      }
+  
+      .react-aria-OverlayArrow svg {
+        transform: rotate(180deg);
+      }
+    }
+  
+    &[data-placement=right] {
+      --origin: translateX(-8px);
+  
+      &:has(.react-aria-OverlayArrow) {
+        margin-left: 6px;
+      }
+  
+      .react-aria-OverlayArrow svg {
+        transform: rotate(90deg);
+      }
+    }
+  
+    &[data-placement=left] {
+      --origin: translateX(8px);
+  
+      &:has(.react-aria-OverlayArrow) {
+        margin-right: 6px;
+      }
+  
+      .react-aria-OverlayArrow svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }

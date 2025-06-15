@@ -1,0 +1,31 @@
+@import '../../../../assets/css/utilities/animations.css';
+
+.lang-menu {
+  .lang-toggle {
+    color: var(--black-dark-color);
+    background-color: transparent;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50% 50%;
+
+    &:hover {
+      background-color: var(--black-transparency-color-100);
+      background-image: none;
+      animation: btn-hover 1.2s;
+      box-shadow: 0 0 0 0.5rem transparent;
+      transform: translateZ(0);
+    }
+  }
+
+  .lang-menu-content {
+    cursor: pointer;
+
+    .lang-menu-item {
+      padding: 0.25rem 0.5rem;
+       &:hover, &:hover {
+          background-color: var(--black-color);
+        }
+    }
+  }
+}

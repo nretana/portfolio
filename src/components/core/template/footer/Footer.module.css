@@ -1,0 +1,7 @@
+footer {
+  padding: 1rem 1rem;
+
+  .footer-text {
+    text-align: center;
+  }
+}

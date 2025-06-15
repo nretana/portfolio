@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "skillsExperience": "Skills & Experience",
+    "projects": "Projects",
+    "aboutMe": "About Me",
+    "contact": "Contact",
+    "langMenu": {
+      "english": "English",
+      "spanish": "Spanish"
+    }
+  },
+  "landingPage": {
+    "heroTitle": "Hello, I'm Nelly",
+    "heroText": "I am a front end developer at heart, but I have also done my share of fullstack work. I transform ideas into real, creative solutions. I have 8+ years of experience in the tech industry. I enjoy the working process of materializing ideas into something bigger. I look forward to collaborating with you to realize your aspirations."
+  },
+  "skillsExperience": {
+    "title": "Skills & Experience",
+    "paragraph1": "The following section highlights my core technical skills and areas of expertise, developed through hands-on experience in web development and ongoing professional growth.",
+    "companies": [
+      {
+        "name": "360Training",
+        "startDate": "06/2024",
+        "endDate": "11/2024",
+        "description": "Collaborated on the modernization of a Learning Management System using a modern tech stack: React.js, ASP.NET Core, Microservices, SQL Server, Docker, and Azure Cloud."
+      },
+      {
+        "name": "Fiserv",
+        "startDate": "10/2012",
+        "endDate": "12/2021",
+        "description": "Collaborated on full-stack development for financial services projects, delivering high-quality solutions using a comprehensive tech stack: ASP.NET MVC, C#, REST, HTML, CSS3, Less, jQuery, and JavaScript."
+      },
+      {
+        "name": "Mnet",
+        "startDate": "11/2011",
+        "endDate": "10/20212",
+        "description": "Implemented frontend (ASP.NET, C#, CSS, HTML, jQuery), backend (Web Services, SQL Server) tasks for e-commerce services."
+      },
+      {
+        "name": "A&B Technology Solutions",
+        "startDate": "10/2010",
+        "endDate": "05/2011",
+        "description": "Implemented frontend (ASP.NET, Visual Basic, CSS, HTML, Javascript), backend (Web Services, SQL Server) tasks for healthcare services."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "paragraph1": "Projects that balance usability and structure with a curiosity for learning and experimenting with different tools.",
+    "projects": [
+      {
+        "title": "BookStore App",
+        "description": "Small book app with user management and book search system.",
+        "tag": "Project"
+      },
+      {
+        "title": "Calendar App",
+        "description": "Calendar app for tracking your appointments.",
+        "tag": "Project"
+      },
+      {
+        "title": "Kap App",
+        "description": "UI refresh for healing therapy website.",
+        "tag": "Project"
+      },
+      {
+        "title": "Admin App",
+        "description": "Template for scaling a monolithic application",
+        "tag": "Project"
+      },
+      {
+        "title": "Microfrontend App",
+        "description": "Exploring microfrontend architecture with React JS.",
+        "tag": "Use Case"
+      },
+      {
+        "title": "Exploring Panda CSS",
+        "description": "Is it possible to create a style guide with CSS-in-JS approach?",
+        "tag": "Use Case"
+      }
+    ],
+    "btnCard": "View"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "paragraph1": "Hi, I’m a software engineer with over 8 years of experience helping brands to solve complex problems through thoughtful, results-driven solutions.",
+    "paragraph2": "Throughout my career, I have worked projects across financial services, e-learning, working with small and large teams. My approach is grounded in strategy, collaboration, and a deep understanding of both user needs and business goals.",
+    "paragraph3": "I’m passionate about delivering excellence, continuous learning, and creating work that not only performs — but lasts. Whether it’s optimizing a product, scaling a system, or building a brand from the ground up, I bring clarity, and commitment to every stage of the process."
+  },
+  "contact": {
+    "title": "Contact",
+    "paragraph1": "I am always open to new opportunities, creative collaborations, or simply connecting with like-minded people.",
+    "paragraph2": "Whether you are interested in working together, have a project in mind, or just want to say hello — feel free to reach out."
+  }
+}

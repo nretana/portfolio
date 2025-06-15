@@ -1,0 +1,42 @@
+
+a {
+  text-decoration: none;
+  color: var(--body-text);
+  transition: color 0.2s ease;
+  position: relative;
+
+  &:visited,
+  &:active {
+    color: var(--body-text);
+  }
+
+  &:hover {
+    color: var(--body-text);
+    transition: 0.5s color ease;
+    &::after,
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 0;
+    right: 0;
+    height: 3px;
+  }
+
+  &::after {
+    transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    background-color: var(--black-dark-color);
+    background-image: linear-gradient(
+      to right,
+      var(--black-light-color),
+      var(--black-dark-color)
+    );
+  }
+}

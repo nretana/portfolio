@@ -1,0 +1,23 @@
+.time-line-item {
+  display: flex;
+  position: relative;
+  padding-left: 16px;
+
+  .time-line-bullet {
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+
+  .time-line-body {
+    border-left: 3px solid var(--black-light-color);
+    padding: 0.5rem 0 1rem 1.75rem;
+  }
+
+  &:last-of-type {
+    .time-line-body {
+        border-width: 0;
+    }
+  }
+}

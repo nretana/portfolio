@@ -1,0 +1,50 @@
+@import '../utilities/animations.css';
+
+.btn {
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    
+    &.btn-primary {
+        background-color: var(--black-color);
+        background-image: linear-gradient(var(--black-light-color), var(--black-dark-color));
+        background-repeat: no-repeat;
+        background-color: var(--black-color);
+        color: var(--white-color);
+        border-radius: var(--button-border-radius);
+        padding: 0.75rem 1.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+
+        &:hover, &:active {
+            background-image: none;
+            animation: btn-hover 1.2s;
+            box-shadow: 0 0 0 0.5rem transparent;
+            transform: translateZ(0);
+            text-decoration: none;
+        }
+    }
+
+    &.rounded {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0;
+        border: 0;
+        border-radius: 50% 50% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+a.btn {
+    &:hover, &:active {
+        text-decoration: none;
+    }
+
+    &::after, &::before {
+        content: none;
+    }
+}
+
