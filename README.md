@@ -3,11 +3,10 @@
 Welcome to my portfolio
 
 
-## Features
-* Services
-* Tools
+## Sections
+* Skills & Experience
+* Projects
 * About Me
-* Pricing
 * Contact
 
 
