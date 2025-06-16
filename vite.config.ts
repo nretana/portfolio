@@ -6,6 +6,7 @@ import { imageToWebpPlugin } from 'vite-plugin-image-to-webp';
 //import { visualizer } from 'rollup-plugin-visualizer';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import UnpluginInjectPreload from 'unplugin-inject-preload/vite';
+import { viteStaticCopy} from 'vite-plugin-static-copy';
 
 
 // https://vite.dev/config/
@@ -39,6 +40,11 @@ export default ({ mode }: { mode: string }) => {
           plugins: [{ name: 'removeViewBox' }, { name: 'sortAttrs' }],
         },
       }),
+      viteStaticCopy({
+        targets: [
+          { src: 'CNAME', dest: '' }
+        ]
+      })
     ],
     assetsInclude: ['**/*.{jpg,jpeg}'],
     /* css: {

@@ -48,7 +48,8 @@
     "unplugin-inject-preload": "^3.0.0",
     "vite": "^6.3.5",
     "vite-plugin-image-optimizer": "^1.1.8",
-    "vite-plugin-image-to-webp": "^1.0.14"
+    "vite-plugin-image-to-webp": "^1.0.14",
+    "vite-plugin-static-copy": "^3.0.2"
   },
   "browserslist": [
     "last 2 Chrome versions",
