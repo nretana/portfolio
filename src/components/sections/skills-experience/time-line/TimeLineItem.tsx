@@ -26,7 +26,7 @@ export const TimeLineItem: React.FC<TimeLineItemProps> = ({
           </div>
         </div>
         <div className={cls(classes['time-line-body'])}>
-          <div className='d-flex'>
+          <div className='d-flex mb-2'>
             <span className='heading-4 me-2'>{name}</span>
             <span className='fw-bold'>
               {startDate} - {endDate}

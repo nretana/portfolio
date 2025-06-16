@@ -1,14 +1,12 @@
-
 /* Poppins - 400 regular */
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/poppins/poppins-latin-400-normal.woff2') format('woff2'), 
-       url('../fonts/poppins/poppins-latin-400-normal.woff') format('woff');
+  src: url('../fonts/poppins/poppins-latin-400-normal.woff2') format('woff2'),
+    url('../fonts/poppins/poppins-latin-400-normal.woff') format('woff');
 }
-
 
 /* Poppins - 500 medium */
 @font-face {
@@ -16,10 +14,9 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/poppins/poppins-latin-500-normal.woff2') format('woff2'), 
-       url('../fonts/poppins/poppins-latin-500-normal.woff') format('woff');
+  src: url('../fonts/poppins/poppins-latin-500-normal.woff2') format('woff2'),
+    url('../fonts/poppins/poppins-latin-500-normal.woff') format('woff');
 }
-
 
 /* Poppins - 700 bold */
 @font-face {
@@ -27,6 +24,26 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/poppins/poppins-latin-700-normal.woff2') format('woff2'), 
-       url('../fonts/poppins/poppins-latin-700-normal.woff') format('woff');
+  src: url('../fonts/poppins/poppins-latin-700-normal.woff2') format('woff2'),
+    url('../fonts/poppins/poppins-latin-700-normal.woff') format('woff');
+}
+
+/* Metropolis - 400 regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/metropolis/metropolis-regular-webfont.woff2') format('woff2'),
+       url('../fonts/metropolis/metropolis-regular-webfont.woff') format('woff');
+}
+
+/* Metropolis - 500 regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/metropolis/metropolis-medium-webfont.woff2') format('woff2'),
+       url('../fonts/metropolis/metropolis-medium-webfont.woff') format('woff');
 }
