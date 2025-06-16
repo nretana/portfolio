@@ -42,8 +42,8 @@ const _AboutMe: React.FC<WithTranslationProps> = ({ t }) => {
               </div>
               <div className='col-12 col-lg-5 col-xl-4 p-0 px-lg-3'>
                 <div className='d-flex flex-column justify-content-center mt-3 mt-lg-0'>
-                  <p className='mb-2'>{t('aboutMe.paragraph1')}</p>
-                  <p className='mb-2'>{t('aboutMe.paragraph2')}</p>
+                  <p className='mb-3'>{t('aboutMe.paragraph1')}</p>
+                  <p className='mb-3'>{t('aboutMe.paragraph2')}</p>
                   <p>{t('aboutMe.paragraph3')}</p>
                 </div>
               </div>

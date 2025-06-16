@@ -32,7 +32,7 @@ const _ProjectCard: React.FC<PricingCardProps & WithTranslation> = ({
           <IconPhotoFilled size={30} />
         )}
       </Card.Header>
-      <Card.Body className='h-100'>
+      <Card.Body className={classes['project-body-card']}>
         <span className='heading-4'>{title}</span>
         <div className='tag my-2'>
           <span className='heading-5'>{tag}</span>
