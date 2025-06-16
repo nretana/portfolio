@@ -1,13 +1,12 @@
 
-
 .contact-section {
     width: 100%;
     position: relative;
-    padding: 5rem 0 5rem 0;
+    padding: 2rem 0 2rem 0;
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 992px) {
     .contact-section {
-
+        padding: 5rem 0 5rem 0;
     };
 }
