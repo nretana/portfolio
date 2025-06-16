@@ -6,10 +6,12 @@ import { withTranslation } from 'react-i18next';
 import { useAppSelector } from '@/store';
 import { ProjectCard } from './project-card/ProjectCard';
 import { AnimateSection } from '@/components/core/shared/animation/AnimateSection';
+
 import adminImg from '@assets/imgs/projects/admin_img.png';
 import bookstoreImg from '@assets/imgs/projects/bookstore_img.png';
 import calendarImg from '@assets/imgs/projects/calendar_img.png';
 import kapImg from '@assets/imgs/projects/kap_img.png';
+import pandacssImg from '@assets/imgs/projects/panda_css_app_img.png';
 
 import classes from './Projects.module.css';
 
@@ -42,8 +44,8 @@ const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
   },
   {
     id: 'pandacss-usecase',
-    projectUrl: 'https://github.com/nretana',
-    imgUrl: '',
+    projectUrl: 'https://github.com/nretana/pandacssapp',
+    imgUrl: pandacssImg,
   },
 ];
 

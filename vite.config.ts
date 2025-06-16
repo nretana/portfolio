@@ -7,8 +7,8 @@ import { imageToWebpPlugin } from 'vite-plugin-image-to-webp';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import UnpluginInjectPreload from 'unplugin-inject-preload/vite';
 
-// https://vite.dev/config/
 
+// https://vite.dev/config/
 export default ({ mode }: { mode: string }) => {
   const env = loadEnv(mode, process.cwd(), '');
 

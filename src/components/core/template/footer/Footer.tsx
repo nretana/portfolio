@@ -3,11 +3,11 @@ import classes from './Footer.module.css';
 import { WithTranslationProps } from '@/@types/withTranslationProps';
 import { withTranslation } from 'react-i18next';
 
-const _Footer: React.FC<WithTranslationProps> = () => {
+const _Footer: React.FC<WithTranslationProps> = ({ t }) => {
   return (
     <footer>
       <div className={classes['footer-text']}>
-        © {new Date().getFullYear()} Nelly Retana, All rights reserved
+        © {new Date().getFullYear()} Nelly Retana, {t('footer.copyright')}
       </div>
     </footer>
   );

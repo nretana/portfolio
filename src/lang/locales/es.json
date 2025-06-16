@@ -69,12 +69,12 @@
       },
       {
         "title": "Microfrontend App",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at.",
+        "description": "Esta aplicación de prueba explora la arquitectura de microfrontend con React JS, centrándose en cuellos de botella comunes como dependencias compartidas, comunicación de módulos y desafíos de implementación.",
         "tag": "Caso de Uso"
       },
       {
         "title": "Explorando Panda CSS",
-        "description": "¿Es posible crear una guía de estilo con CSS-in-JS?",
+        "description": "Building a test app to explore Panda CSS and evaluate whether it's suitable for creating a maintainable style guide.",
         "tag": "Caso de Uso"
       }
     ],
@@ -90,5 +90,8 @@
     "title": "Contacto",
     "paragraph1": "Siempre estoy abierto a nuevas oportunidades, colaboraciones creativas o simplemente conectarme con personas con ideas afines.",
     "paragraph2": "Si estás interesado en trabajar juntos, tienes un proyecto en mente o simplemente quieres saludar, no dudes en comunicarte con nosotros."
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados"
   }
 }

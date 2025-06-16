@@ -69,12 +69,12 @@
       },
       {
         "title": "Microfrontend App",
-        "description": "Exploring microfrontend architecture with React JS.",
+        "description": "This test app explores microfrontend architecture with React JS, focusing on common bottlenecks like shared dependencies, module communication, and deployment challenges.",
         "tag": "Use Case"
       },
       {
         "title": "Exploring Panda CSS",
-        "description": "Is it possible to create a style guide with CSS-in-JS approach?",
+        "description": "Building a test app to explore Panda CSS and evaluate whether it's suitable for creating a maintainable style guide.",
         "tag": "Use Case"
       }
     ],
@@ -90,5 +90,8 @@
     "title": "Contact",
     "paragraph1": "I am always open to new opportunities, creative collaborations, or simply connecting with like-minded people.",
     "paragraph2": "Whether you are interested in working together, have a project in mind, or just want to say hello — feel free to reach out."
+  },
+  "footer": {
+    "copyright": "All rights reserved"
   }
 }
