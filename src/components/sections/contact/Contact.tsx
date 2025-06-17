@@ -24,7 +24,7 @@ const _Contact: React.FC<WithTranslationProps> = ({ t }) => {
                   <h2 className='text-center text-lg-start mb-4'>
                     {t('contact.title')}
                   </h2>
-                  <p className='mb-2'>{t('contact.paragraph1')}</p>
+                  <p className='mb-3'>{t('contact.paragraph1')}</p>
                   <p className='mb-4'>{t('contact.paragraph2')}</p>
                   <div>
                     <ul className='mb-3'>

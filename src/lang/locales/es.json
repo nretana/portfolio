@@ -64,7 +64,7 @@
       },
       {
         "title": "Admin App",
-        "description": "Plantilla para escalar una aplicación monolítica",
+        "description": "Plantilla de estructura de proyecto para aplicaciones frontend monolíticas escalable.",
         "tag": "Proyecto"
       },
       {
