@@ -54,7 +54,7 @@
     }
 
     .type-writing-content-2 {
-      h1 > span {
+      h1 {
         color: #0000;
         background: linear-gradient(-90deg, var(--body-text) 5px, transparent 0)
             10px 0,
@@ -68,8 +68,12 @@
       }
     }
 
-    .img-fluid {
+    .chevron-icon {
       width: 100%;
+      height: auto;
+       > path {
+         stroke: var(--body-text);
+       }
     }
   }
 
@@ -84,6 +88,7 @@
 @media (min-width: 768px) {
   .landing-page {
     .grid-hero-content {
+      grid-template-columns: minmax(0, 30px) minmax(0, auto);
       .grid-cell-1 {
         align-self: center;
       }

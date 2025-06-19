@@ -2,7 +2,7 @@
     /*colors*/
     --white-color: #ffffff;
     --black-color: #000000;
-    --gray-color: #7F8889; /* #F8F8F8;*/
+    --gray-color: #747676;
 
     /* black */
     --black-light-color: #3E3E43;
@@ -62,7 +62,9 @@
     --font-size-lg: calc(1.25 * var(--default-font-size));
 
     /*line heights*/
-    --line-height: 1.25rem;
+    --line-height-sm: 1.25rem;
+    --line-height-md: 1.375rem;
+    --line-height-lg: 1.5rem;
 
     /*headings*/
     --font-family-headings: 'Poppins', 'Verdana';

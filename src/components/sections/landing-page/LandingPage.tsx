@@ -8,7 +8,6 @@ import chevronIcon from '@assets/imgs/chevron_icon.svg';
 
 import classes from './LandingPage.module.css';
 
-
 const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
   return (
     <section id='LandingPage' className={cls(classes['landing-page'])}>
@@ -24,11 +23,20 @@ const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
               <div className='d-flex justify-content-center align-items-center h-100'>
                 <div className={classes['grid-hero-content']}>
                   <div className={classes['grid-cell-1']}>
-                    <img
-                      src={chevronIcon}
-                      alt=''
-                      className={classes['img-fluid']}
-                    />
+                    <svg
+                      className={classes['chevron-icon']}
+                      width='41'
+                      height='69'
+                      viewBox='0 0 41 69'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                      aria-hidden='true'
+                    >
+                      <path
+                        d='M6.96216 6.95679L34.719 34.7136L6.96216 62.4705'
+                        strokeWidth='10'
+                      />
+                    </svg>
                   </div>
                   <div
                     className={cls(
@@ -36,9 +44,7 @@ const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
                       classes['type-writing-content-2']
                     )}
                   >
-                    <h1>
-                      <span>{t('landingPage.heroTitle')}</span>
-                    </h1>
+                    <h1>{t('landingPage.heroTitle')}</h1>
                   </div>
                   <p className={classes['grid-cell-4']}>
                     {t('landingPage.heroText')}

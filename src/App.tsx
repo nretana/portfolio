@@ -31,8 +31,8 @@ const App = () => {
         <Footer />
       </Suspense>
       <div className={cls('scroll-content', 'mb-4')}>
-        <a href='#LandingPage' className='btn btn-primary rounded'>
-          <IconChevronUp size={30} aria-label='Back to top' />
+        <a href='#LandingPage' className='btn btn-primary rounded' aria-label='Back to top'>
+          <IconChevronUp size={30} />
         </a>
       </div>
     </AppLayout>

@@ -6,7 +6,7 @@ body {
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-xs);
-  line-height: var(--line-height);
+  line-height: var(--line-height-sm);
   background-color: var(--body-bg);
   color: var(--body-text);
   position: relative;
@@ -82,6 +82,11 @@ small {
   font-size: var(--font-size-sm);
 }
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
 .scroll-content {
   position: fixed;
   bottom: 0;
@@ -123,8 +128,8 @@ p {
 
 @media (min-width: 768px) {
   body {
-    font-size: var(--font-size-md);
-    line-height: var(--line-height);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
 
     &::before {
       content: '';
@@ -145,8 +150,12 @@ p {
 }
 
 @media (min-width: 992px) {
+
   .tablet body,
   body {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+
     &::before {
       content: '';
       right: 0;

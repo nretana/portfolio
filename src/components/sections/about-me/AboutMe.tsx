@@ -23,7 +23,7 @@ const _AboutMe: React.FC<WithTranslationProps> = ({ t }) => {
               {t('aboutMe.title')}
             </h2>
             <div className='row px-0 px-lg-3'>
-              <div className='col-12 col-lg-3'>
+              <div className='col-12 col-lg-4 col-xl-3'>
                 <div className='d-flex align-items-center justify-content-center justify-content-lg-start'>
                   <div>
                     <picture>
@@ -40,7 +40,7 @@ const _AboutMe: React.FC<WithTranslationProps> = ({ t }) => {
                   </div>
                 </div>
               </div>
-              <div className='col-12 col-lg-5 col-xl-4 p-0 px-lg-3'>
+              <div className='col-12 col-lg-5 p-0 px-lg-3'>
                 <div className='d-flex flex-column justify-content-center mt-3 mt-lg-0'>
                   <p className='mb-3'>{t('aboutMe.paragraph1')}</p>
                   <p className='mb-3'>{t('aboutMe.paragraph2')}</p>

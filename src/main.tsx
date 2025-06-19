@@ -7,7 +7,7 @@ import App from './App.tsx';
 
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import 'bootstrap/dist/css/bootstrap-utilities.min.css';
-import './index.css';
+import './main.css';
 import './assets/css/core.css';
 
 
