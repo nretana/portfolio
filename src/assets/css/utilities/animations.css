@@ -30,8 +30,9 @@
 }
 
 @keyframes t {
-  from {background-size:0 200%}
+  from {background-size:0 300%}
 }
+
 @keyframes b {
   50% {background-position:0 -100%,0 0}
 }

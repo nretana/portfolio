@@ -7,6 +7,7 @@ import { AnimateSection } from '@/components/core/shared/animation/AnimateSectio
 import chevronIcon from '@assets/imgs/chevron_icon.svg';
 
 import classes from './LandingPage.module.css';
+import { isMobile } from 'react-device-detect';
 
 const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
   return (
@@ -44,7 +45,9 @@ const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
                       classes['type-writing-content-2']
                     )}
                   >
-                    <h1>{t('landingPage.heroTitle')}</h1>
+                    <h1>
+                      <span>{t('landingPage.heroTitle')}</span>
+                    </h1>
                   </div>
                   <p className={classes['grid-cell-4']}>
                     {t('landingPage.heroText')}

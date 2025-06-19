@@ -54,26 +54,23 @@
     }
 
     .type-writing-content-2 {
-      h1 {
+      h1 > span {
         color: #0000;
-        background: linear-gradient(-90deg, var(--body-text) 5px, transparent 0)
-            10px 0,
-          linear-gradient(var(--body-text) 0 0) 0 0;
-        background-size: calc(var(--steps) * 2ch) 200%;
+        background: linear-gradient(-90deg, var(--body-text) 5px, transparent 0) 10px 0, linear-gradient(var(--body-text) 0 0) 0 0;
+        background-size: calc(var(--steps) * 3ch) 300%;
         -webkit-background-clip: padding-box, text;
         background-clip: padding-box, text;
         background-repeat: no-repeat;
-        animation: b 0.6s infinite steps(1),
-          t calc(var(--steps) * 0.25s) steps(var(--steps)) forwards;
+        animation: b 0.6s infinite steps(2), t calc(var(--steps) * 0.5s) steps(var(--steps)) forwards;
       }
     }
 
     .chevron-icon {
       width: 100%;
       height: auto;
-       > path {
-         stroke: var(--body-text);
-       }
+      > path {
+        stroke: var(--body-text);
+      }
     }
   }
 
@@ -84,6 +81,7 @@
     transform: translateX(-50%);
   }
 }
+
 
 @media (min-width: 768px) {
   .landing-page {
