@@ -61,7 +61,7 @@ const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
             </div>
             <div className='d-none d-lg-block col-lg-4'>
               <div className='d-flex justify-content-center align-items-center h-100 px-4'>
-                <img className='img-fluid' src={heroImage} alt='' width={375} height={354} />
+                <img className='img-fluid' src={heroImage} alt='' width={375} height={354} loading='lazy' />
               </div>
             </div>
           </div>
