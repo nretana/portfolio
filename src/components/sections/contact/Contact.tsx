@@ -1,10 +1,11 @@
 import React from 'react';
 import cls from 'clsx';
-import { withTranslation } from 'react-i18next';
 import type { WithTranslationProps } from '@/@types/withTranslationProps';
+import { withTranslation } from 'react-i18next';
 import { AnimateSection } from '@/components/core/shared/animation/AnimateSection';
+import { CopyRight } from './CopyRight';
 import {
-  IconBrandGithub,
+  IconBrandGithubFilled,
   IconBrandLinkedinFilled,
   IconMailFilled,
 } from '@tabler/icons-react';
@@ -41,7 +42,7 @@ const _Contact: React.FC<WithTranslationProps> = ({ t }) => {
                       </li>
                       <li className='d-flex align-items-center mb-3'>
                         <span className='bullet me-2'>
-                          <IconBrandGithub />
+                          <IconBrandGithubFilled />
                         </span>
                         <a href='https://github.com/nretana' target='_blank'>
                           https://github.com/nretana
@@ -61,6 +62,7 @@ const _Contact: React.FC<WithTranslationProps> = ({ t }) => {
           </div>
         </div>
       </AnimateSection>
+       <CopyRight />
     </section>
   );
 };

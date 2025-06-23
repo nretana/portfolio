@@ -8,7 +8,7 @@ export type ToolBoxProps = ToolBox;
 const ToolBoxItem: React.FC<ToolBoxProps> = ({ label, imgUrl }) => {
   return (
     <img
-      className={classes['img-fluid']}
+      className='img-fluid'
       src={imgUrl}
       alt={label}
       title={label}

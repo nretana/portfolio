@@ -1,12 +1,36 @@
-
 .contact-section {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0 2rem 0;
+  min-height: calc(100svh - 4rem);
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    overflow-x: hidden;
+    background: var(--white-color);
+    background-image: url('../../../assets/imgs/bg_landing_page2.svg');
+    background-repeat: no-repeat;
     width: 100%;
-    position: relative;
-    padding: 2rem 0 2rem 0;
+    height: 15vw;
+    background-position: center center;
+    background-size: cover;
+    bottom: -7vw;
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+} 
+
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 5rem 0 2rem 0;
+    min-height: calc(100svh - 7rem);
+  }
 }
 
 @media (min-width: 992px) {
-    .contact-section {
-        padding: 5rem 0 5rem 0;
-    };
+  .contact-section {
+    padding: 5rem 0 5rem 0;
+    min-height: calc(100svh - 10rem);
+  }
 }

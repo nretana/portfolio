@@ -35,7 +35,7 @@ const _AboutMe: React.FC<WithTranslationProps> = ({ t }) => {
                         media={`(min-width: ${BREAKPOINTS_SIZES.MEDIUM}px)`}
                         srcSet={profileMediumPhoto}
                       />
-                      <img className={classes['img-fluid']} src={profileSmallPhoto} alt='Nelly Retana' width={166} height={221} />
+                      <img className='img-fluid' src={profileSmallPhoto} alt='Nelly Retana' width={166} height={221} />
                     </picture>
                   </div>
                 </div>

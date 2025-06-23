@@ -4,10 +4,25 @@
   position: relative;
   height: 100svh;
 
-  .menu-content {
+  &::before {
+    content: ' ';
     position: absolute;
-    top: 10px;
-    right: 10px;
+    overflow-x: hidden;
+    background: var(--white-color);
+    background-image: url('../../../assets/imgs/bg_landing_page2.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15vw;
+    background-position: center center;
+    background-size: cover;
+    bottom: -7vw;
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+
+  .menu-content {
+    position: static;
+    padding-top: 0.75rem;
   }
 
   .lang-content {
@@ -16,7 +31,14 @@
     right: 0;
   }
 
-  .grid-hero-content {
+  .grid-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .grid-hero {
     display: grid;
     gap: 16px;
     grid-template-columns: minmax(0, 20px) minmax(0, auto);
@@ -56,17 +78,20 @@
     .type-writing-content-2 {
       h1 > span {
         color: #0000;
-        background: linear-gradient(-90deg, var(--body-text) 5px, transparent 0) 10px 0, linear-gradient(var(--body-text) 0 0) 0 0;
+        background: linear-gradient(-90deg, var(--body-text) 5px, transparent 0)
+            10px 0,
+          linear-gradient(var(--body-text) 0 0) 0 0;
         background-size: calc(var(--steps) * 3ch) 300%;
         -webkit-background-clip: padding-box, text;
         background-clip: padding-box, text;
         background-repeat: no-repeat;
-        animation: b 0.6s infinite steps(2), t calc(var(--steps) * 0.5s) steps(var(--steps)) forwards;
+        animation: b 0.6s infinite steps(2),
+          t calc(var(--steps) * 0.5s) steps(var(--steps)) forwards;
       }
     }
 
     .chevron-icon {
-      width: 100%;
+      max-width: 100%;
       height: auto;
       > path {
         stroke: var(--body-text);
@@ -82,10 +107,9 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .landing-page {
-    .grid-hero-content {
+    .grid-hero {
       grid-template-columns: minmax(0, 30px) minmax(0, auto);
       .grid-cell-1 {
         align-self: center;
@@ -98,16 +122,30 @@
   .landing-page {
     .menu-content {
       position: absolute;
+      padding-top: 0;
       top: auto;
       right: auto;
       left: 0;
       bottom: 10px;
+      z-index: 2;
     }
 
-    .grid-hero-content {
+    .grid-hero {
       gap: 24px;
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
+
+      .grid-cell-1 {
+        align-self: start;
+        top: 15px;
+        position: relative;
+      }
     }
+  }
+}
+
+@media (orientation: landscape) and (max-height: 576px) {
+  .grid-content {
+    height: auto !important;
   }
 }

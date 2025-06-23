@@ -15,20 +15,32 @@ const Contact = lazy(() => import('./components/sections/contact/Contact'));
 const Footer = lazy(() => import('./components/core/template/footer/Footer'));
 import { AppLayout } from './components/core/layouts/AppLayout';
 
+import classes from './App.module.css';
+
 const App = () => {
   useResponsive();
 
   return (
     <AppLayout>
       <Suspense fallback={<div></div>}>
-        <main className={cls('container-fluid m-0 p-0 overflow-hidden')}>
-          <LandingPage />
-          <SkillsAndExperience />
-          <Projects />
-          <AboutMe />
-          <Contact />
+        <main className={cls('container-fluid m-0 p-0', classes.app)}>
+          <div className={classes['app-section']}>
+            <LandingPage />
+          </div>
+          <div className={classes['app-section']}>
+            <SkillsAndExperience />
+          </div>
+          <div className={classes['app-section']}>
+            <Projects />
+          </div>
+          <div className={classes['app-section']}>
+            <AboutMe />
+          </div>
+          <div className={classes['app-section']}>
+            <Contact />
+          </div>
         </main>
-        <Footer />
+       {/*  <Footer /> */}
       </Suspense>
       <div className={cls('scroll-content', 'mb-4')}>
         <a href='#LandingPage' className='btn btn-primary rounded' aria-label='Back to top'>

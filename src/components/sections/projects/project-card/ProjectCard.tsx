@@ -23,10 +23,11 @@ const _ProjectCard: React.FC<PricingCardProps & WithTranslation> = ({
   imgUrl,
   t
 }) => {
+  const isImgRender = imgUrl.trim().length > 0;
   return (
     <Card className={cls(classes['project-card'], 'd-flex flex-column h-100 align-items-stretch')}>
-      <Card.Header className={classes['project-header-card']}>
-        {imgUrl.trim().length > 0 ? (
+      <Card.Header className={cls(classes['project-header-card'], (isImgRender ? classes['bg-none'] : ''))}>
+        {isImgRender ? (
           <img src={imgUrl} alt={title} width={100} height={100} />
         ) : (
           <IconPhotoFilled size={30} />
