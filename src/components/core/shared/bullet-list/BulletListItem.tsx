@@ -1,10 +1,10 @@
-import type { Bullet } from '@/@types/bullet';
+import type { BulletItem } from '@/@types/bullet';
 import {
   IconPackage,
   IconStackBack,
 } from '@tabler/icons-react';
 
-export type BulletListItemProps = { uuid?: string } & Bullet;
+export type BulletListItemProps = { uuid?: string } & BulletItem;
 
 export const BulletListItem: React.FC<BulletListItemProps> = ({
   title,

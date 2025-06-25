@@ -38,7 +38,7 @@ const _ProjectCard: React.FC<PricingCardProps & WithTranslation> = ({
         <div className='tag my-2'>
           <span className='heading-5'>{tag}</span>
         </div>
-        <p>{description}</p>
+        <p className='pt-2'>{description}</p>
       </Card.Body>
       <Card.Footer>
         <a
@@ -46,7 +46,7 @@ const _ProjectCard: React.FC<PricingCardProps & WithTranslation> = ({
           target='_blank'
           className='btn btn-primary d-block text-center'
         >
-          {t('projects.btnCard')}
+          {t('projects.btnLabel')}
         </a>
       </Card.Footer>
     </Card>

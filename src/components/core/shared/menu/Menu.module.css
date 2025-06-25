@@ -1,11 +1,15 @@
-
-.main-menu {
+nav {
+  width: fit-content;
+  .main-menu {
     display: flex;
     justify-content: end;
+  }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
+  nav {
     .main-menu {
-        display: inline-block;
+      display: inline-block;
     }
+  }
 }

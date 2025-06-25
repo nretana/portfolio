@@ -1,10 +1,10 @@
-import type { Bullet } from '@/@types/bullet';
+import type { BulletItem } from '@/@types/bullet';
 import { randomId } from '@/utils/randomId';
 import { BulletListItem } from './BulletListItem';
 
 
 export type BulletListItemProps = {
-  items: Bullet[]
+  items: BulletItem[]
 };
 
 export const BulletList: React.FC<BulletListItemProps> = ({ items }) => {

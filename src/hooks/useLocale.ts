@@ -3,8 +3,8 @@ import i18n from '@/lang/locales'
 import { useAppSelector } from '@/store'
 
 function useLocale() {
-    const locale = useAppSelector((state) => state.locale.currentLang)
-
+    const locale = useAppSelector((state) => state.locale.currentLang);
+    
     useEffect(() => {
         const formattedLang = locale.replace(/-([a-z])/g, function (g) {
             return g[1].toUpperCase()

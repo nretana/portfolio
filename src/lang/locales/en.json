@@ -15,9 +15,10 @@
   },
   "services": {
     "title": "Services",
-    "services": [
+    "serviceList": [
       {
-        "title": "Scalable UI Component Development", "description": "Build modular, reusable UI components tailored for performance and long-term maintainability."
+        "title": "Scalable UI Component Development",
+        "description": "Build modular, reusable UI components tailored for performance and long-term maintainability."
       },
       {
         "title": "API Integration Services",
@@ -78,7 +79,7 @@
   "projects": {
     "title": "Projects",
     "paragraph1": "Projects that balance usability and structure with a curiosity for learning and experimenting with different tools.",
-    "projects": [
+    "projectList": [
       {
         "title": "BookStore App",
         "description": "Small book app with user management and book search system.",
@@ -110,7 +111,7 @@
         "tag": "Use Case"
       }
     ],
-    "btnCard": "View"
+    "btnLabel": "View"
   },
   "aboutMe": {
     "title": "About Me",

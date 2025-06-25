@@ -15,7 +15,7 @@
   },
   "services": {
     "title": "Servicios",
-    "services": [
+    "serviceList": [
       {
         "title": "Desarrollo Escalable de Componentes UI",
         "description": "Construcción de componentes de interfaz de usuario modulares y reutilizables, diseñados para ofrecer alto rendimiento y facilidad de mantenimiento a largo plazo."
@@ -79,7 +79,7 @@
   "projects": {
     "title": "Proyectos",
     "paragraph1": "Proyectos que equilibran usabilidad y estructura con la curiosidad por aprender y experimentar con diferentes herramientas.",
-    "projects": [
+    "projectList": [
       {
         "title": "BookStore App",
         "description": "Pequeña aplicación de libros con gestión de usuarios y sistema de búsqueda de libros.",
@@ -111,7 +111,7 @@
         "tag": "Caso de Uso"
       }
     ],
-    "btnLabel": "Ver"
+    "btnLabel": "Explorar"
   },
   "aboutMe": {
     "title": "Sobre Mí",

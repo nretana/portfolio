@@ -50,13 +50,8 @@ const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
 ];
 
 export const _Projects: React.FC<WithTranslationProps> = ({ t }) => {
-  const currentLang = useAppSelector((state) => state.locale.currentLang);
-  const projects = t('projects.projects', { returnObjects: true }) as Project[];
-  const allprojects = useMemo(
-    () =>
-      projects.map((project, index) => ({ ...project, ...projectList[index] })),
-    [currentLang]
-  );
+  const projects = t('projects.projectList', { returnObjects: true }) as Project[];
+  const allprojects = projects.map((project, index) => ({ ...project, ...projectList[index] }))
 
   return (
     <section id='Projects' className={cls(classes['projects-section'])}>

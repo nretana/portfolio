@@ -1,4 +1,4 @@
-export type Bullet = {
+export type BulletItem = {
   title?: string | undefined,
   description: string
 }
