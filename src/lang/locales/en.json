@@ -13,6 +13,38 @@
     "heroTitle": "Hello, I'm Nelly",
     "heroText": "I am a front end developer at heart, but I have also done my share of fullstack work. I transform ideas into real, creative solutions. I have 8+ years of experience in the tech industry. I enjoy the working process of materializing ideas into something bigger. I look forward to collaborating with you to realize your aspirations."
   },
+  "services": {
+    "title": "Services",
+    "services": [
+      {
+        "title": "Scalable UI Component Development", "description": "Build modular, reusable UI components tailored for performance and long-term maintainability."
+      },
+      {
+        "title": "API Integration Services",
+        "description": "Seamlessly connect frontend applications with RESTful or GraphQL APIs for dynamic, data-driven interfaces."
+      },
+      {
+        "title": "Unit Testing Integration",
+        "description": "Set up and integrate robust unit testing frameworks to ensure code quality and reduce regressions."
+      },
+      {
+        "title": "Web Application Performance Optimization",
+        "description": "Improve load times, responsiveness, and core web vitals through targeted frontend performance enhancements."
+      },
+      {
+        "title": "Bug Fixes & Component Enhancements",
+        "description": "Identify and resolve UI bugs, and enhance existing components to meet evolving requirements and improve UX."
+      },
+      {
+        "title": "Frontend Architecture Redesign",
+        "description": "Redesign application architecture for scalability, cleaner code structure, and easier team collaboration."
+      },
+      {
+        "title": "Web Design Systems & Style Guide Development",
+        "description": "Create consistent, scalable design systems and style guides that unify branding and UI standards."
+      }
+    ]
+  },
   "skillsExperience": {
     "title": "Skills & Experience",
     "paragraph1": "The following section highlights my core technical skills and areas of expertise, developed through hands-on experience in web development and ongoing professional growth.",

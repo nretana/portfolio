@@ -13,6 +13,39 @@
     "heroTitle": "Hola, soy Nelly",
     "heroText": "Soy una desarrolladora apasionada en front-end, pero también he hecho mis aportes como desarrolladora fullstack. Transformo ideas en soluciones reales y creativas. Tengo más de 8 años de experiencia en la industria tecnológica. Disfruto del proceso de convertir ideas en algo más grande. Espero colaborar contigo para hacer realidad tus aspiraciones."
   },
+  "services": {
+    "title": "Servicios",
+    "services": [
+      {
+        "title": "Desarrollo Escalable de Componentes UI",
+        "description": "Construcción de componentes de interfaz de usuario modulares y reutilizables, diseñados para ofrecer alto rendimiento y facilidad de mantenimiento a largo plazo."
+      },
+      {
+        "title": "Servicios de Integración de APIs",
+        "description": "Conexión fluida de aplicaciones frontend con APIs RESTful o GraphQL para interfaces dinámicas y orientadas a datos."
+      },
+      {
+        "title": "Integración de Pruebas Unitarias",
+        "description": "Implementación de marcos de pruebas unitarias robustos para garantizar la calidad del código y reducir errores regresivos."
+      },
+      {
+        "title": "Optimización del Rendimiento de Aplicaciones Web",
+        "description": "Mejora de tiempos de carga, capacidad de respuesta y métricas clave del rendimiento mediante optimizaciones específicas del frontend."
+      },
+      {
+        "title": "Corrección de Errores y Mejora de Componentes",
+        "description": "Identificación y resolución de errores en la interfaz, junto con mejoras a componentes existentes para adaptarse a nuevas necesidades y mejorar la experiencia del usuario."
+      },
+      {
+        "title": "Rediseño de Arquitectura Frontend",
+        "description": "Reestructuración de la arquitectura de la aplicación para mejorar la escalabilidad, claridad del código y colaboración entre equipos."
+      },
+      {
+        "title": "Desarrollo de Sistemas de Diseño Web y Guías de Estilo",
+        "description": "Creación de sistemas de diseño y guías de estilo coherentes y escalables que unifican la identidad visual y los estándares de interfaz."
+      }
+    ]
+  },
   "skillsExperience": {
     "title": "Habilidades & Experiencia",
     "paragraph1": "La siguiente sección destaca mis principales habilidades técnicas y áreas de especialización, desarrolladas a través de experiencia práctica en desarrollo web y crecimiento profesional continuo.",

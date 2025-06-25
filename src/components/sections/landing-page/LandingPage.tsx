@@ -4,10 +4,8 @@ import { withTranslation } from 'react-i18next';
 import type { WithTranslationProps } from '@/@types/withTranslationProps';
 import { Menu } from '@/components/core/shared/menu/Menu';
 import { AnimateSection } from '@/components/core/shared/animation/AnimateSection';
-import chevronIcon from '@assets/imgs/chevron_icon.svg';
 
 import classes from './LandingPage.module.css';
-import { isMobile } from 'react-device-detect';
 import heroImage from '@assets/imgs/tech_landing_page.svg';
 
 

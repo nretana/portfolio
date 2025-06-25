@@ -13,7 +13,6 @@ const _AboutMe: React.FC<WithTranslationProps> = ({ t }) => {
   return (
     <section
       id='About'
-      key={`about_section`}
       className={cls(classes['about-me-section'])}
     >
       <AnimateSection>

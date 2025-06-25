@@ -58,7 +58,7 @@ const _LangMenu: React.FC<WithTranslationProps> = ({ t }) => {
       <Popover
         target={{
           className: classes['lang-toggle'],
-          content: <IconWorld size={30} aria-label='Language' />
+          content: <IconWorld className='icon' aria-label='Language' />
         }}
         dialogSection={{ className: classes['lang-menu'], content }}
         placement={

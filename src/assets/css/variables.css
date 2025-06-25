@@ -75,11 +75,16 @@
     /* links */
 
     /* icons */
-    --icon-size: 30;
-    --icon-size-lg: 50;
+    --icon-size-xs: 20px;
+    --icon-size-sm: 25px;
+    --icon-size-md: 30px;
+    --icon-size-lg: 35px;
 
     /* bullets */
-    --bullet-size: 35px;
+    --bullet-size-xs: 25px;
+    --bullet-size-sm: 30px;
+    --bullet-size-md: 40px;
+    --bullet-size-lg: 45px;
 
     /* cards */
     --card-border-radius: 1.2rem;

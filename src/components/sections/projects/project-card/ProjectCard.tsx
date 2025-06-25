@@ -30,7 +30,7 @@ const _ProjectCard: React.FC<PricingCardProps & WithTranslation> = ({
         {isImgRender ? (
           <img src={imgUrl} alt={title} width={100} height={100} />
         ) : (
-          <IconPhotoFilled size={30} />
+          <IconPhotoFilled className='icon' />
         )}
       </Card.Header>
       <Card.Body className={classes['project-body-card']}>

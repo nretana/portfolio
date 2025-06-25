@@ -30,8 +30,8 @@ const _Contact: React.FC<WithTranslationProps> = ({ t }) => {
                   <div>
                     <ul className='mb-3'>
                       <li className='d-flex align-items-center mb-3'>
-                        <span className='bullet me-2'>
-                          <IconBrandLinkedinFilled />
+                        <span className='bullet me-2 me-lg-3'>
+                          <IconBrandLinkedinFilled className='icon' />
                         </span>
                         <a
                           href='https://www.linkedin.com/in/nretana'
@@ -41,16 +41,16 @@ const _Contact: React.FC<WithTranslationProps> = ({ t }) => {
                         </a>
                       </li>
                       <li className='d-flex align-items-center mb-3'>
-                        <span className='bullet me-2'>
-                          <IconBrandGithubFilled />
+                        <span className='bullet me-2 me-lg-3'>
+                          <IconBrandGithubFilled className='icon' />
                         </span>
                         <a href='https://github.com/nretana' target='_blank'>
                           https://github.com/nretana
                         </a>
                       </li>
                       <li className='d-flex align-items-center'>
-                        <span className='bullet me-2'>
-                          <IconMailFilled />
+                        <span className='bullet me-2 me-lg-3'>
+                          <IconMailFilled className='icon' />
                         </span>
                         <span>nretana1089@gmail.com</span>
                       </li>

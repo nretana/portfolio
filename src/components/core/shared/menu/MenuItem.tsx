@@ -31,13 +31,13 @@ export const MenuItem: React.FC<MenuItemProps> = ({
           {title ? (
             <Tooltip label={title} placement={(currentScreenSize !== 'large' && currentScreenSize !== 'xlarge') ? 'bottom' : 'right'}>
               <Link className='btn' href={linkUrl} aria-label={title}>
-                <Icon size={30} />
+                <Icon className='icon' />
               </Link>
             </Tooltip>
           ) : (
             <div>
               <a className='btn' href={linkUrl}>
-                <Icon size={30} />
+                <Icon className='icon' />
               </a>
             </div>
           )}

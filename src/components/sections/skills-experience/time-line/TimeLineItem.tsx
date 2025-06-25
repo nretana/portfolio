@@ -22,7 +22,7 @@ export const TimeLineItem: React.FC<TimeLineItemProps> = ({
       <div className={cls(classes['time-line-item'])}>
         <div className={cls(classes['time-line-bullet'])}>
           <div className={cls('bullet', classes['bullet'])}>
-            <IconBuildingSkyscraper />
+            <IconBuildingSkyscraper className='icon' />
           </div>
         </div>
         <div className={cls(classes['time-line-body'])}>
