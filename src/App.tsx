@@ -44,7 +44,7 @@ const App = () => {
         </main>
       </Suspense>
 
-      <div className={cls('scroll-content', 'mb-4', 'd-none')}>
+      <div className={cls('scroll-content', 'mb-4')}>
         <a href='#LandingPage' className='btn btn-primary rounded' aria-label='Back to top'>
           <IconChevronUp className='icon' />
         </a>
