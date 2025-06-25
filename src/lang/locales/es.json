@@ -37,12 +37,12 @@
         "description": "Identificación y resolución de errores en la interfaz, junto con mejoras a componentes existentes para adaptarse a nuevas necesidades y mejorar la experiencia del usuario."
       },
       {
-        "title": "Rediseño de Arquitectura Frontend",
-        "description": "Reestructuración de la arquitectura de la aplicación para mejorar la escalabilidad, claridad del código y colaboración entre equipos."
-      },
-      {
         "title": "Desarrollo de Sistemas de Diseño Web y Guías de Estilo",
         "description": "Creación de sistemas de diseño y guías de estilo coherentes y escalables que unifican la identidad visual y los estándares de interfaz."
+      },
+      {
+        "title": "Rediseño de Arquitectura Frontend",
+        "description": "Reestructuración de la arquitectura de la aplicación para mejorar la escalabilidad, claridad del código y colaboración entre equipos."
       }
     ]
   },

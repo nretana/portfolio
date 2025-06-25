@@ -37,12 +37,12 @@
         "description": "Identify and resolve UI bugs, and enhance existing components to meet evolving requirements and improve UX."
       },
       {
-        "title": "Frontend Architecture Redesign",
-        "description": "Redesign application architecture for scalability, cleaner code structure, and easier team collaboration."
-      },
-      {
         "title": "Web Design Systems & Style Guide Development",
         "description": "Create consistent, scalable design systems and style guides that unify branding and UI standards."
+      },
+      {
+        "title": "Frontend Architecture Redesign",
+        "description": "Redesign application architecture for scalability, cleaner code structure, and easier team collaboration."
       }
     ]
   },
