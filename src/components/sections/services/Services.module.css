@@ -1,7 +1,6 @@
 .services-section {
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 0 0 0;
   position: relative;
-  min-height: calc(100vh - 4rem);
 
   &::before {
     content: ' ';
