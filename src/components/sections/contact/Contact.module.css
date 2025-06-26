@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   padding: 2rem 0 2rem 0;
-  min-height: calc(100svh - 4rem);
+  min-height: calc(100dvh - 4rem);
 
   &::after {
     content: ' ';
@@ -24,13 +24,13 @@
 @media (min-width: 768px) {
   .contact-section {
     padding: 5rem 0 2rem 0;
-    min-height: calc(100svh - 7rem);
+    min-height: calc(100dvh - 7rem);
   }
 }
 
 @media (min-width: 992px) {
   .contact-section {
     padding: 5rem 0 5rem 0;
-    min-height: calc(100svh - 10rem);
+    min-height: calc(100dvh - 10rem);
   }
 }

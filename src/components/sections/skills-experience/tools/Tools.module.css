@@ -3,12 +3,13 @@
   grid-template-columns: repeat(4, minmax(35px, 50px));
   grid-template-rows: repeat(3, minmax(35px, 50px));
   gap: 15px;
-  padding-left: 4rem;
+  padding-left: 3.25rem;
 }
 
 @media (min-width: 992px) {
   .grid-tools {
     grid-template-columns: repeat(6, minmax(30px, 60px));
     grid-template-rows: repeat(2, minmax(30px, 60px));
+    padding-left: 4.25rem;
   }
 }
