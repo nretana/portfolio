@@ -1,6 +1,7 @@
 .services-section {
-  padding-top: 2rem;
+  padding: 2rem 0 2rem 0;
   position: relative;
+   min-height: calc(100vh - 5rem);
 
   &::before {
     content: ' ';
@@ -21,7 +22,7 @@
 
 @media (min-width: 768px) {
   .services-section {
-    padding-top: 5rem;
+    padding: 5rem 0 2rem 0;
   }
 }
 

@@ -23,6 +23,8 @@
   .menu-content {
     position: static;
     padding-top: 0.75rem;
+    display: flex;
+    justify-content: end;
   }
 
   .lang-content {
@@ -114,6 +116,7 @@
 @media (min-width: 992px) {
   .landing-page {
     .menu-content {
+      display: initial;
       position: absolute;
       padding-top: 0;
       top: auto;
