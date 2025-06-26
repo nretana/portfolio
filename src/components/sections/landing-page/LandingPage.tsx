@@ -8,19 +8,18 @@ import { AnimateSection } from '@/components/core/shared/animation/AnimateSectio
 import classes from './LandingPage.module.css';
 import heroImage from '@assets/imgs/tech_landing_page.svg';
 
-
 const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
   return (
     <section id='LandingPage' className={cls(classes['landing-page'])}>
       <AnimateSection>
         <div className='container h-100 m-0 p-0 m-md-auto'>
-          <div className='row'>
-          <div className={classes['menu-content']}>
-            <div className='ms-3'>
-              <Menu />
+         {/*  <div className='row'>
+            <div className={classes['menu-content']}>
+              <div className='ms-3'>
+                <Menu />
+              </div>
             </div>
-          </div>
-          </div>
+          </div> */}
           <div className='row g-0 px-4 m-0 h-100'>
             <div className='col-12 col-lg-8 h-100'>
               <div className={classes['grid-content']}>
@@ -59,7 +58,14 @@ const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
             </div>
             <div className='d-none d-lg-block col-lg-4'>
               <div className='d-flex justify-content-center align-items-center h-100 px-4'>
-                <img className='img-fluid' src={heroImage} alt='' width={375} height={354} loading='lazy' />
+                <img
+                  className='img-fluid'
+                  src={heroImage}
+                  alt=''
+                  width={375}
+                  height={354}
+                  loading='lazy'
+                />
               </div>
             </div>
           </div>
