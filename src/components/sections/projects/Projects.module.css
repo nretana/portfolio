@@ -20,13 +20,13 @@
 }
 
 @media (min-width: 768px) {
-  .skills-experience-section {
+  .projects-section {
     padding: 5rem 0 10rem 0;
   }
 }
 
 @media (min-width: 992px) {
-    .projects-section {
-        padding: 5rem 0 9vw 0;
-    };
-} 
+  .projects-section {
+    padding: 5rem 0 9vw 0;
+  }
+}
