@@ -2,10 +2,9 @@
 
 .landing-page {
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100svh;
 
-  /*&::before {
+  &::before {
     content: ' ';
     position: absolute;
     overflow-x: hidden;
@@ -19,10 +18,10 @@
     bottom: -7vw;
     will-change: transform;
     backface-visibility: hidden;
-  }*/
+  }
 
   .menu-content {
-    position: static;
+    position: absolute;
     padding-top: 0.75rem;
     display: flex;
     justify-content: end;
