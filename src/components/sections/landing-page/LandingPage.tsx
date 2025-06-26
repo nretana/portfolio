@@ -13,13 +13,13 @@ const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
     <section id='LandingPage' className={cls(classes['landing-page'])}>
       <AnimateSection>
         <div className='container h-100 m-0 p-0 m-md-auto'>
-         {/*  <div className='row'>
+          <div className='row'>
             <div className={classes['menu-content']}>
               <div className='ms-3'>
                 <Menu />
               </div>
             </div>
-          </div> */}
+          </div>
           <div className='row g-0 px-4 m-0 h-100'>
             <div className='col-12 col-lg-8 h-100'>
               <div className={classes['grid-content']}>
