@@ -1,13 +1,13 @@
 .app {
   overflow: auto;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100svh;
+  min-height: 100svh;
   -webkit-scroll-snap-type: y mandatory;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
 
   .app-section {
-    min-height: 100vh;
+    min-height: 100svh;
     overflow: hidden;
     scroll-snap-stop: always;
     scroll-snap-align: start;

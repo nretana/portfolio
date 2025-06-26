@@ -2,7 +2,7 @@
 
 .landing-page {
   position: relative;
-  min-height: 100svh;
+  height: 100svh;
 
   &::before {
     content: ' ';
@@ -21,7 +21,7 @@
   }
 
   .menu-content {
-    position: absolute;
+    position: static;
     padding-top: 0.75rem;
     display: flex;
     justify-content: end;
