@@ -39,7 +39,7 @@ const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
   },
   {
     id: 'micronfrontend-usecase',
-    projectUrl: 'https://github.com/nretana',
+    projectUrl: 'https://github.com/nretana/microfrontend-poc',
     imgUrl: '',
   },
   {
