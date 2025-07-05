@@ -78,6 +78,6 @@ export default ({ mode }: { mode: string }) => {
       },
     }, */
     },
-    base: `${env.VITE_APP_BASE_PATH}`,
+    base: `./`,
   });
 };
