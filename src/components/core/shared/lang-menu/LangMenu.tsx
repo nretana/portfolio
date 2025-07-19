@@ -5,9 +5,12 @@ import { useAppDispatch } from '@/store';
 import { setLang } from '@/store/slices/localeSlice';
 import { useAppSelector } from '@/store';
 import { withTranslation } from 'react-i18next';
+import { LARGE, XLARGE } from '@/constants/app.constant';
 import type { WithTranslationProps } from '@/@types/withTranslationProps';
 
+
 import classes from './LangMenu.module.css';
+
 
 const _LangMenu: React.FC<WithTranslationProps> = ({ t }) => {
   const dispatch = useAppDispatch();
@@ -62,7 +65,7 @@ const _LangMenu: React.FC<WithTranslationProps> = ({ t }) => {
         }}
         dialogSection={{ className: classes['lang-menu'], content }}
         placement={
-          currentScreenSize !== 'large' && currentScreenSize !== 'xlarge'
+          currentScreenSize !== LARGE && currentScreenSize !== XLARGE
             ? 'bottom'
             : 'left'
         }

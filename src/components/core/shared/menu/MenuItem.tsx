@@ -1,10 +1,12 @@
+import cls from 'clsx';
 import { Tooltip } from '../tooltip/Tooltip';
 import type { Icon } from '@tabler/icons-react';
-import cls from 'clsx';
 import { Link } from 'react-aria-components';
 import { useAppSelector } from '@/store';
+import { LARGE, XLARGE } from '@/constants/app.constant';
 
 import classes from './MenuItem.module.css';
+
 
 export type MenuItemProps = {
   title?: string;
@@ -20,6 +22,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({
   children,
 }) => {
   const currentScreenSize = useAppSelector(state => state.theme.currentScreenSize);
+  const isSmallDevice = (currentScreenSize !== LARGE && currentScreenSize !== XLARGE);
   const Icon = icon as Icon;
 
   return (
@@ -28,16 +31,16 @@ export const MenuItem: React.FC<MenuItemProps> = ({
         children
       ) : (
         <>
-          {title ? (
-            <Tooltip label={title} placement={(currentScreenSize !== 'large' && currentScreenSize !== 'xlarge') ? 'bottom' : 'right'}>
-              <Link className='btn' href={linkUrl} aria-label={title}>
-                <Icon className='icon' />
+          {title && !isSmallDevice ? (
+            <Tooltip label={title} placement='right'>
+              <Link className={cls('btn', classes['btn'])} href={linkUrl} aria-label={title}>
+                 <Icon className='icon' />
               </Link>
             </Tooltip>
           ) : (
-            <div>
-              <a className='btn' href={linkUrl}>
-                <Icon className='icon' />
+            <div className='py-3'>
+              <a href={linkUrl}>
+                {title}
               </a>
             </div>
           )}

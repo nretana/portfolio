@@ -1,26 +1,32 @@
 @import '../../../../assets/css/utilities/animations.css';
 
-
 .menu-item {
   a {
+    margin: 1rem 1rem 0.25rem 1rem;
     color: var(--black-dark-color);
-    background-color: transparent;
-    padding: 1rem 1rem;
     cursor: pointer;
-    border: 0;
-    border-radius: 50% 50%;
-    
-    &:visited, &:active {
-      color: var(--black-dark-color);
-    }
 
-    &:hover {
+    &.btn {
       color: var(--black-dark-color);
-      background-color: var(--black-transparency-color-100);
-      background-image: none;
-      animation: btn-hover 1.2s;
-      box-shadow: 0 0 0 0.5rem transparent;
-      transform: translateZ(0);
+      background-color: transparent;
+      border: 0;
+      border-radius: 50% 50%;
+      padding: 1rem 1rem;
+      margin: 0;
+
+      &:visited,
+      &:active {
+        color: var(--black-dark-color);
+      }
+
+      &:hover {
+        color: var(--black-dark-color);
+        background-color: var(--black-transparency-color-100);
+        background-image: none;
+        animation: btn-hover 1.2s;
+        box-shadow: 0 0 0 0.5rem transparent;
+        transform: translateZ(0);
+      }
     }
   }
 }

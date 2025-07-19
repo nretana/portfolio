@@ -1,3 +1,4 @@
+import { ScreenSize } from '@/@types/screenSize';
 
 export const PERSIST_STORE_NAME = 'site';
 
@@ -7,4 +8,10 @@ export const BREAKPOINTS_SIZES = {
     MEDIUM: 768,
     LARGE: 992,
     XLARGE: 1200
-} 
+}
+
+export const XSMALL: ScreenSize  = 'xsmall';
+export const SMALL: ScreenSize  = 'small';
+export const MEDIUM: ScreenSize  = 'medium';
+export const LARGE: ScreenSize = 'large'
+export const XLARGE: ScreenSize = 'xlarge'

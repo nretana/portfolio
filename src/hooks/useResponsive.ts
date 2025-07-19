@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { isBrowser, isMobile, isTablet } from 'react-device-detect';
-import { BREAKPOINTS_SIZES } from '@/constants/app.constant';
+import { isMobile, isTablet } from 'react-device-detect';
+import { BREAKPOINTS_SIZES, LARGE, MEDIUM, SMALL, XLARGE, XSMALL } from '@/constants/app.constant';
 import { useAppDispatch, useAppSelector } from '@/store';
 import { setCurrentScreenSize } from '@/store/slices/themeSlice';
 import { throttle } from '@/utils/throttle';
@@ -25,21 +25,21 @@ export const useResponsive = () => {
       window.innerWidth >= BREAKPOINTS_SIZES.SMALL &&
       window.innerWidth < BREAKPOINTS_SIZES.MEDIUM
     ) {
-      dispatch(setCurrentScreenSize('small'));
+      dispatch(setCurrentScreenSize(SMALL));
     } else if (
       window.innerWidth >= BREAKPOINTS_SIZES.MEDIUM &&
       window.innerWidth < BREAKPOINTS_SIZES.LARGE
     ) {
-      dispatch(setCurrentScreenSize('medium'));
+      dispatch(setCurrentScreenSize(MEDIUM));
     } else if (
       window.innerWidth >= BREAKPOINTS_SIZES.LARGE &&
       window.innerWidth < BREAKPOINTS_SIZES.XLARGE
     ) {
-      dispatch(setCurrentScreenSize('large'));
+      dispatch(setCurrentScreenSize(LARGE));
     } else if (window.innerWidth >= BREAKPOINTS_SIZES.XLARGE) {
-      dispatch(setCurrentScreenSize('xlarge'));
+      dispatch(setCurrentScreenSize(XLARGE));
     } else {
-      dispatch(setCurrentScreenSize('xsmall'));
+      dispatch(setCurrentScreenSize(XSMALL));
     }
   };
 
