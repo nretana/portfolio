@@ -1,6 +1,8 @@
-@import '../../../../assets/css/utilities/animations.css';
+@import '../../../../../assets/css/utilities/animations.css';
 
 .menu-item {
+  color: var(--black-dark-color);
+  
   a {
     margin: 1rem 1rem 0.25rem 1rem;
     color: var(--black-dark-color);
@@ -28,5 +30,9 @@
         transform: translateZ(0);
       }
     }
+  }
+
+  .icon {
+     color: var(--black-dark-color);
   }
 }

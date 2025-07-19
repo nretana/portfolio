@@ -1,4 +1,4 @@
-import { MenuItem } from './MenuItem'
+import { MenuItem } from './menu-item/MenuItem'
 import { IconDeviceImacFilled,
          IconFoldersFilled, 
          IconBoltFilled, 

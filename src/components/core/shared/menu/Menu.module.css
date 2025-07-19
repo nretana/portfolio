@@ -1,9 +1,5 @@
 nav {
   width: fit-content;
-  .main-menu {
-    display: flex;
-    justify-content: end;
-  }
 }
 
 @media (min-width: 992px) {

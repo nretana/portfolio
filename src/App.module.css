@@ -12,6 +12,7 @@
     scroll-snap-stop: always;
     scroll-snap-align: start;
   }
+  
 }
 
 @media (min-width: 1800px) {

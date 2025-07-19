@@ -2,22 +2,19 @@ import { Suspense, lazy } from 'react';
 import cls from 'clsx';
 import { LandingPage } from './components/sections/landing-page/LandingPage';
 import { IconChevronUp } from '@tabler/icons-react';
-import { useResponsive } from './hooks/useResponsive';
 import { AppLayout } from './components/core/layouts/AppLayout';
+
 const SkillsAndExperience = lazy(
   () => import('./components/sections/skills-experience/SkillsAndExperience')
 );
-const Services = lazy(() => import('./components/sections/services/Services'))
+const Services = lazy(() => import('./components/sections/services/Services'));
 const Projects = lazy(() => import('./components/sections/projects/Projects'));
 const AboutMe = lazy(() => import('./components/sections/about-me/AboutMe'));
 const Contact = lazy(() => import('./components/sections/contact/Contact'));
 
-
 import classes from './App.module.css';
 
-
 const App = () => {
-  useResponsive();
 
   return (
     <AppLayout>
@@ -42,13 +39,16 @@ const App = () => {
             <Contact />
           </div>
         </main>
+        <div className={cls('scroll-content', 'mb-4')}>
+          <a
+            href='#LandingPage'
+            className='btn btn-primary rounded'
+            aria-label='Back to top'
+          >
+            <IconChevronUp className='icon' />
+          </a>
+        </div>
       </Suspense>
-
-      <div className={cls('scroll-content', 'mb-4')}>
-        <a href='#LandingPage' className='btn btn-primary rounded' aria-label='Back to top'>
-          <IconChevronUp className='icon' />
-        </a>
-      </div>
     </AppLayout>
   );
 };

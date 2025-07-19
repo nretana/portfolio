@@ -39,6 +39,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover,
+    &:active {
+      background-image: none;
+      animation: btn-hover 1.2s;
+      box-shadow: 0 0 0 0.5rem transparent;
+      transform: translateZ(0);
+      text-decoration: none;
+    }
   }
 }
 
