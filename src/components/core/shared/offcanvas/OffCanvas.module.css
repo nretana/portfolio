@@ -5,7 +5,7 @@
   inset: 0;
   background: rgba(45 0 0 / 0.3);
   backdrop-filter: blur(10px);
-  z-index: 10;
+  z-index: 15;
 
   &[data-entering] {
     animation: modal-overlay 300ms;

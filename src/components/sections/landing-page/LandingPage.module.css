@@ -20,19 +20,6 @@
     backface-visibility: hidden;
   }
 
-  .menu-content {
-    position: static;
-    padding-top: 0.75rem;
-    display: flex;
-    justify-content: end;
-  }
-
-  .lang-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
   .grid-content {
     display: flex;
     justify-content: center;
@@ -91,14 +78,6 @@
           t calc(var(--steps) * 0.5s) steps(var(--steps)) forwards;
       }
     }
-
-    .chevron-icon {
-      max-width: 100%;
-      height: auto;
-      > path {
-        stroke: var(--body-text);
-      }
-    }
   }
 }
 
@@ -115,17 +94,6 @@
 
 @media (min-width: 992px) {
   .landing-page {
-    .menu-content {
-      display: initial;
-      position: absolute;
-      padding-top: 0;
-      top: auto;
-      right: auto;
-      left: 0;
-      bottom: 10px;
-      z-index: 2;
-    }
-
     .grid-hero {
       gap: 24px;
       grid-template-columns: auto auto;

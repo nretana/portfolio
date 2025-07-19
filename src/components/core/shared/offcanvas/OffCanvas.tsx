@@ -1,5 +1,4 @@
 import React from 'react';
-import cx from 'clsx';
 import { IconMenu, IconX } from '@tabler/icons-react';
 import {
   ModalOverlay,
@@ -20,7 +19,7 @@ export const OffCanvas: React.FC<OffCanvasProps> = ({ title, children }) => {
   return (
     <DialogTrigger>
       <Button className='btn btn-primary rounded'> 
-        <IconMenu />
+        <IconMenu className='icon' />
       </Button>
       <ModalOverlay className={classes['offcanvas-overlay']}>
         <Modal className={classes['offcanvas']} isDismissable>
@@ -33,7 +32,7 @@ export const OffCanvas: React.FC<OffCanvasProps> = ({ title, children }) => {
                 autoFocus
                 aria-label='close menu'
               >
-                <IconX />
+                <IconX className='icon'/>
               </Button>
             </div>
             {children}

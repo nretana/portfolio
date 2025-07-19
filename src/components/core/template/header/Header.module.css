@@ -1,0 +1,27 @@
+.menu-content {
+  position: absolute;
+  padding-top: 0.75rem;
+  display: flex;
+  justify-content: end;
+  z-index: 10;
+}
+
+.chevron-icon {
+  max-width: 100%;
+  height: auto;
+  > path {
+    stroke: var(--body-text);
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-content {
+    display: initial;
+    padding-top: 0;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 10px;
+    width: fit-content;
+  }
+}

@@ -3,10 +3,9 @@ import cls from 'clsx';
 import { LandingPage } from './components/sections/landing-page/LandingPage';
 import { IconChevronUp } from '@tabler/icons-react';
 import { AppLayout } from './components/core/layouts/AppLayout';
+import { Header } from './components/core/template/header/Header';
 
-const SkillsAndExperience = lazy(
-  () => import('./components/sections/skills-experience/SkillsAndExperience')
-);
+const SkillsAndExperience = lazy(() => import('./components/sections/skills-experience/SkillsAndExperience'));
 const Services = lazy(() => import('./components/sections/services/Services'));
 const Projects = lazy(() => import('./components/sections/projects/Projects'));
 const AboutMe = lazy(() => import('./components/sections/about-me/AboutMe'));
@@ -14,11 +13,13 @@ const Contact = lazy(() => import('./components/sections/contact/Contact'));
 
 import classes from './App.module.css';
 
+
 const App = () => {
 
   return (
     <AppLayout>
       <Suspense fallback={<div></div>}>
+         <Header />
         <main className={cls('container-fluid m-0 p-0', classes.app)}>
           <div className={classes['app-section']}>
             <LandingPage />
@@ -39,7 +40,7 @@ const App = () => {
             <Contact />
           </div>
         </main>
-        <div className={cls('scroll-content', 'mb-4')}>
+        <div className='scroll-content mb-4 px-4'>
           <a
             href='#LandingPage'
             className='btn btn-primary rounded'

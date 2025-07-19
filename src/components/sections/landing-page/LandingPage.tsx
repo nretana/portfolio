@@ -1,37 +1,17 @@
 import React from 'react';
 import cls from 'clsx';
 import { withTranslation } from 'react-i18next';
-import { useResponsive } from '@/hooks/useResponsive';
 import type { WithTranslationProps } from '@/@types/withTranslationProps';
-import { Menu } from '@/components/core/shared/menu/Menu';
-import { OffCanvas } from '@/components/core/shared/offcanvas/OffCanvas';
 import { AnimateSection } from '@/components/core/shared/animation/AnimateSection';
-import { LARGE, XLARGE } from '@/constants/app.constant';
 import heroImage from '@assets/imgs/tech_landing_page.svg';
 
 import classes from './LandingPage.module.css';
 
-const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
-  const { currentScreenSize } = useResponsive();
 
+const _LandingPage: React.FC<WithTranslationProps> = ({ t }) => {
   return (
     <section id='LandingPage' className={cls(classes['landing-page'])}>
       <AnimateSection>
-        <div className='container-fluid px-0 mx-0'>
-          <div className='row g-0'>
-            <div className={classes['menu-content']}>
-              <div className='ms-3'>
-                {currentScreenSize === LARGE || currentScreenSize === XLARGE ? (
-                  <Menu />
-                ) : (
-                  <OffCanvas title='Menu'>
-                    <Menu />
-                  </OffCanvas>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
         <div className='container h-100 m-0 p-0 m-md-auto'>
           <div className='row g-0 px-4 m-0 h-100'>
             <div className='col-12 col-lg-8 h-100'>
