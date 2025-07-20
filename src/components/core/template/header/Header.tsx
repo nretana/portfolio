@@ -5,10 +5,13 @@ import { OffCanvas } from '@/components/core/shared/offcanvas/OffCanvas';
 import { LARGE, XLARGE } from '@/constants/app.constant';
 
 import classes from './Header.module.css';
-
+import { useState } from 'react';
 
 export const Header = () => {
   const { currentScreenSize } = useResponsive();
+  const [isOpen, setOpen] = useState<boolean>(false);
+
+  const onClose = () => setOpen(false);
 
   return (
     <header>
@@ -18,8 +21,8 @@ export const Header = () => {
             {currentScreenSize === LARGE || currentScreenSize === XLARGE ? (
               <Menu />
             ) : (
-              <OffCanvas title='Menu'>
-                <Menu />
+              <OffCanvas title='Menu' isOpen={isOpen} setOpen={setOpen}>
+                <Menu onClose={onClose} />
               </OffCanvas>
             )}
           </div>

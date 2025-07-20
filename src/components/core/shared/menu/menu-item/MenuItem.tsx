@@ -12,6 +12,7 @@ export type MenuItemProps = {
   icon?: Icon;
   linkUrl?: string;
   children?: React.ReactNode;
+  onClose?: () => void;
 };
 
 export const MenuItem: React.FC<MenuItemProps> = ({
@@ -19,6 +20,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({
   icon,
   linkUrl,
   children,
+  onClose,
 }) => {
   const currentScreenSize = useAppSelector(
     (state) => state.theme.currentScreenSize
@@ -26,6 +28,12 @@ export const MenuItem: React.FC<MenuItemProps> = ({
   const isSmallDevice =
     currentScreenSize !== LARGE && currentScreenSize !== XLARGE;
   const Icon = icon as Icon;
+
+  const onClickLink = () => {
+    if (onClose instanceof Function) {
+      onClose();
+    }
+  };
 
   return (
     <li className={cls(classes['menu-item'], 'mb-2')}>
@@ -47,7 +55,12 @@ export const MenuItem: React.FC<MenuItemProps> = ({
             <div className='py-3'>
               <div className='d-flex align-items-center'>
                 <Icon className='icon px-3' />
-                <Link className='m-0' href={linkUrl} aria-label={title}>
+                <Link
+                  className='m-0'
+                  href={linkUrl}
+                  aria-label={title}
+                  onClick={() => onClickLink()}
+                >
                   {title}
                 </Link>
               </div>
