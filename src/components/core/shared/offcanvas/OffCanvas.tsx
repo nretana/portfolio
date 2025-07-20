@@ -21,8 +21,8 @@ export const OffCanvas: React.FC<OffCanvasProps> = ({ title, children }) => {
       <Button className='btn btn-primary rounded'> 
         <IconMenu className='icon' />
       </Button>
-      <ModalOverlay className={classes['offcanvas-overlay']}>
-        <Modal className={classes['offcanvas']} isDismissable>
+      <ModalOverlay className={classes['offcanvas-overlay']} isDismissable>
+        <Modal className={classes['offcanvas']}>
           <Dialog>
             <div className='d-flex justify-content-between align-items-center mb-3 ms-3'>
               <h4>{title}</h4>

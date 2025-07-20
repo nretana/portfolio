@@ -47,9 +47,9 @@ export const MenuItem: React.FC<MenuItemProps> = ({
             <div className='py-3'>
               <div className='d-flex align-items-center'>
                 <Icon className='icon px-3' />
-                <a className='m-0' href={linkUrl}>
-                  <span>{title}</span>
-                </a>
+                <Link className='m-0' href={linkUrl} aria-label={title}>
+                  {title}
+                </Link>
               </div>
             </div>
           )}
