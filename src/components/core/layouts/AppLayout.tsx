@@ -1,5 +1,6 @@
-import React, { useEffect, ReactNode, useRef } from 'react';
+import React, { useEffect, ReactNode, Suspense, useRef } from 'react';
 import useLocale from '@/hooks/useLocale';
+import { Loader } from '../shared/loader/Loader';
 
 export type AppLayoutProps = {
   children: ReactNode;
@@ -22,8 +23,10 @@ export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   }, [locale]);
 
   return (
-    <div ref={containerRef} className='fade-in'>
-      {children}
-    </div>
+    <Suspense fallback={<Loader />}>
+      <div ref={containerRef} className='fade-in'>
+        {children}
+      </div>
+    </Suspense>
   );
 };

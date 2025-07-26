@@ -5,6 +5,7 @@ import { LandingPage } from './components/sections/landing-page/LandingPage';
 import { IconChevronUp } from '@tabler/icons-react';
 import { AppLayout } from './components/core/layouts/AppLayout';
 import { Header } from './components/core/template/header/Header';
+import { Loader } from './components/core/shared/loader/Loader';
 
 const SkillsAndExperience = lazy(
   () => import('./components/sections/skills-experience/SkillsAndExperience')
@@ -17,6 +18,7 @@ const Contact = lazy(() => import('./components/sections/contact/Contact'));
 import classes from './App.module.css';
 
 const App = () => {
+
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   const goBackToTop = () => {
@@ -26,7 +28,6 @@ const App = () => {
 
   return (
     <AppLayout>
-      <Suspense fallback={<div></div>}>
         <Header />
         <main
           className={cls('container-fluid m-0 p-0', classes.app)}
@@ -56,7 +57,6 @@ const App = () => {
             <IconChevronUp className='icon' />
           </Button>
         </div>
-      </Suspense>
     </AppLayout>
   );
 };
