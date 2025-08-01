@@ -1,5 +1,4 @@
 .menu-content {
-  width: fit-content !important;
   position: absolute;
   padding-top: 0.75rem;
   display: flex;
@@ -23,5 +22,6 @@
     right: auto;
     left: 0;
     bottom: 10px;
+    width: fit-content !important;
   }
 }
