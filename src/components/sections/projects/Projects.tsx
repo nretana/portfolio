@@ -8,6 +8,7 @@ import { ProjectCard } from './project-card/ProjectCard';
 import { AnimateSection } from '@/components/core/shared/animation/AnimateSection';
 
 import adminImg from '@assets/imgs/projects/admin_img.png';
+import adminNextJsImg from '@assets/imgs/projects/admin_nextjs_img.png';
 import bookstoreImg from '@assets/imgs/projects/bookstore_img.png';
 import calendarImg from '@assets/imgs/projects/calendar_img.png';
 import kapImg from '@assets/imgs/projects/kap_img.png';
@@ -20,7 +21,7 @@ const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
   {
     id: 'bookstore-project',
     projectUrl: 'https://github.com/nretana/bookstoreapp',
-    imgUrl: bookstoreImg,
+    imgUrl: bookstoreImg
   },
   {
     id: 'calendar-project',
@@ -30,12 +31,12 @@ const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
   {
     id: 'kapapp-project',
     projectUrl: 'https://github.com/nretana/kapapp',
-    imgUrl: kapImg,
+    imgUrl: kapImg
   },
   {
     id: 'monoapp-project',
     projectUrl: 'https://github.com/nretana/monolithic-app',
-    imgUrl: adminImg,
+    imgUrl: adminImg
   },
   {
     id: 'micronfrontend-usecase',
@@ -45,7 +46,12 @@ const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
   {
     id: 'pandacss-usecase',
     projectUrl: 'https://github.com/nretana/pandacssapp',
-    imgUrl: pandacssImg,
+    imgUrl: pandacssImg
+  },
+   {
+    id: 'mononextapp-project',
+    projectUrl: 'https://github.com/nretana/mononextapp',
+    imgUrl: adminNextJsImg
   },
 ];
 

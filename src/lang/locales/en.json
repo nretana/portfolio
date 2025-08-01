@@ -109,6 +109,11 @@
         "title": "Exploring Panda CSS",
         "description": "Building a test app to explore Panda CSS and evaluate whether it's suitable for creating a maintainable style guide.",
         "tag": "Use Case"
+      },
+      {
+        "title": "Next JS Admin App",
+        "description": "Project structure using Next JS.",
+        "tag": "Project"
       }
     ],
     "btnLabel": "View"
