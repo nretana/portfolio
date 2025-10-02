@@ -16,12 +16,11 @@ import pandacssImg from '@assets/imgs/projects/panda_css_app_img.png';
 
 import classes from './Projects.module.css';
 
-
 const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
   {
     id: 'bookstore-project',
     projectUrl: 'https://github.com/nretana/bookstoreapp',
-    imgUrl: bookstoreImg
+    imgUrl: bookstoreImg,
   },
   {
     id: 'calendar-project',
@@ -31,12 +30,12 @@ const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
   {
     id: 'kapapp-project',
     projectUrl: 'https://github.com/nretana/kapapp',
-    imgUrl: kapImg
+    imgUrl: kapImg,
   },
   {
     id: 'monoapp-project',
     projectUrl: 'https://github.com/nretana/monolithic-app',
-    imgUrl: adminImg
+    imgUrl: adminImg,
   },
   {
     id: 'micronfrontend-usecase',
@@ -46,18 +45,28 @@ const projectList: Pick<Project, 'id' | 'projectUrl' | 'imgUrl'>[] = [
   {
     id: 'pandacss-usecase',
     projectUrl: 'https://github.com/nretana/pandacssapp',
-    imgUrl: pandacssImg
+    imgUrl: pandacssImg,
   },
-   {
+  {
     id: 'mononextapp-project',
     projectUrl: 'https://github.com/nretana/mononextapp',
-    imgUrl: adminNextJsImg
+    imgUrl: adminNextJsImg,
+  },
+  {
+    id: 'n8napp-project',
+    projectUrl: 'https://github.com/nretana/n8napp',
+    imgUrl: '',
   },
 ];
 
 export const _Projects: React.FC<WithTranslationProps> = ({ t }) => {
-  const projects = t('projects.projectList', { returnObjects: true }) as Project[];
-  const allprojects = projects.map((project, index) => ({ ...project, ...projectList[index] }))
+  const projects = t('projects.projectList', {
+    returnObjects: true,
+  }) as Project[];
+  const allprojects = projects.map((project, index) => ({
+    ...project,
+    ...projectList[index],
+  }));
 
   return (
     <section id='Projects' className={cls(classes['projects-section'])}>

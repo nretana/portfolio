@@ -114,7 +114,13 @@
         "title": "Next JS Admin App",
         "description": "Estructura de proyecto utilizando Next JS.",
         "tag": "Proyecto"
+      },
+      {
+        "title": "API App con Integración de N8N",
+        "description": "Integración de APIs con inteligencia artificial para automatizar notificaciones mediante la herramienta N8N.",
+        "tag": "Proyecto"
       }
+
     ],
     "btnLabel": "Explorar"
   },
